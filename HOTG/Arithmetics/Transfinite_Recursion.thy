@@ -3,7 +3,7 @@
 section \<open>Transfinite Recursion\<close>
 theory Transfinite_Recursion
   imports
-    SFunctions_Base
+    HOTG.SFunctions_Base
 begin
 
 paragraph \<open>Summary\<close>

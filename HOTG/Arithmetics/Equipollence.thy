@@ -3,7 +3,7 @@
 section \<open>Equipollence\<close>
 theory Equipollence
   imports
-    SFunctions_Bijection
+    HOTG.SFunctions_Bijection
     Transport.Equivalence_Relations
 begin
 

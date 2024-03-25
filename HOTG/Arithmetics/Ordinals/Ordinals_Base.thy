@@ -3,7 +3,7 @@
 section \<open>Ordinals\<close>
 theory Ordinals_Base
   imports
-    Mem_Transitive_Closed
+    HOTG.Mem_Transitive_Closed
     Transport.HOL_Syntax_Bundles_Groups
     ML_Unification.Unify_Resolve_Tactics
 begin

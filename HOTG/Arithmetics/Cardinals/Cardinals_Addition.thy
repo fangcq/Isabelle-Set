@@ -4,7 +4,7 @@ subsection \<open>Addition\<close>
 theory Cardinals_Addition
   imports
     Cardinals_Base
-    Coproduct
+    HOTG.Coproduct
     SAddition
 begin
 

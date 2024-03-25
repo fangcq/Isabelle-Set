@@ -16,20 +16,29 @@
 
 \begin{document}
 
-\title{HOTG}
-\author{Kevin Kappelmann}
+\title{Generalised Arithmetical Operations in Higher-Order Tarski-Grothendieck Set Theory}
+\author{Linghan Fang}
 \maketitle
 
 \begin{abstract}
-In this work, we present the formalization of generalized set addition and multiplication within
- the Isabelle-Set framework, drawing upon foundational insights from Kirby's article. We extend 
-this foundation by incorporating transfinite recursion and functions restriction for the inductive
- definition of set arithmetic operations, thereby clarifying their fundamental properties. 
-Specifically, we confirm the satisfaction of the associative law for both set addition and
- multiplication. Additionally, we demonstrate the compatibility between set and ordinal addition. 
-The integration of concepts such as cardinals, ordinals, member transitive closure, and comparison
- operators from ZFC_in_HOL_AFP enhances our framework, making the comparison of sets feasible and 
-laying the groundwork for theorem proving. 
+In this work, we present the formalization of various arithmetical operations in
+higher-order Tarski-Grothendieck set theory, as implemented in the Isabelle/Set
+framework\footnote{\url{https://github.com/fangcq/Isabelle-Set}}.
+We define generalized set addition and multiplication within said framework,
+following the pen-and-paper work of Kirby~\cite{kirby_set_arithemtics}
+and a prior formalization by Paulson~\cite{ZFC_in_HOL_AFP}.
+We prove various properties, such as associativity laws, monotonicity rules, and injectivity laws.
+
+Unlike Paulson, our formalization is based on a naive axiomatization of set theory within the
+higher-order logic of Isabelle, whereas Paulson's work is based on the postulation of a constant
+$\textit{elts} :: \textit{zfc\_set} \Rightarrow \textit{zfc\_set set}$
+that embeds the type of ZFC sets within the type
+of Isabelle/HOL sets.
+
+We also define the concepts of set-orders, ordinals, cardinals as well as addition and
+multiplication on cardinals. We demonstrate the compatibility between generalized set and cardinal
+addition. The compatibility between generalized set and cardinal multiplication is left as future
+work.
 \end{abstract}
 
 \tableofcontents

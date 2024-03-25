@@ -1,0 +1,12 @@
+session HOTG_Arithmetics = HOTG +
+  options
+    [timeout = 60,quick_and_dirty]
+  directories
+    Cardinals
+    Ordinals
+  theories
+    Cardinals
+    SMultiplication
+  document_files
+    "root.bib"
+    "root.tex"
